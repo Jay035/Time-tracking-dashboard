@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import timeData from './components/Data';
+import TabContent from './components/TabContent';
+import TimeCard from './components/TimeTracker';
+import Cards from './components/TimeTracker';
 
 function App() {
+  // console.log(timeData)
+  // const card = timeData.map(data => {
+  //   return(
+  //     <Cards
+  //       key={data.id}
+  //       item={data} 
+  //     />
+  //   )
+  // })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TimeCard />
     </div>
   );
 }
