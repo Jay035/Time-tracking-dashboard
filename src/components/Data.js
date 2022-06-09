@@ -1,110 +1,194 @@
-export default[
+import workIcon from '../assets/icon-work.svg';
+import playIcon from "../assets/icon-play.svg";
+import studyIcon from "../assets/icon-study.svg";
+import exerciseIcon from "../assets/icon-exercise.svg";
+import socialIcon from "../assets/icon-social.svg";
+import selfCareIcon from "../assets/icon-self-care.svg";
+
+export const DailyData = [
     {
         "id": "work",
         "title": "Work",
+        "image": workIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 5,
             "previous": 7
-        },
-        "weekly": {
-            "current": 32,
-            "previous": 36
-        },
-        "monthly": {
-            "current": 103,
-            "previous": 128
-        }
         }
     },
     {
         "id": "play",
         "title": "Play",
+        "image": playIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 1,
             "previous": 2
-        },
-        "weekly": {
-            "current": 10,
-            "previous": 8
-        },
-        "monthly": {
-            "current": 23,
-            "previous": 29
-        }
         }
     },
     {
         "id": "study",
         "title": "Study",
+        "image": studyIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 0,
             "previous": 1
-        },
-        "weekly": {
-            "current": 4,
-            "previous": 7
-        },
-        "monthly": {
-            "current": 13,
-            "previous": 19
-        }
         }
     },
     {
         "id": "exercise",
         "title": "Exercise",
+        "image": exerciseIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 1,
             "previous": 1
-        },
-        "weekly": {
-            "current": 4,
-            "previous": 5
-        },
-        "monthly": {
-            "current": 11,
-            "previous": 18
-        }
         }
     },
     {
         "id": "social",
         "title": "Social",
+        "image": socialIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 1,
             "previous": 3
-        },
-        "weekly": {
-            "current": 5,
-            "previous": 10
-        },
-        "monthly": {
-            "current": 21,
-            "previous": 23
-        }
         }
     },
     {
         "id": "selfCare",
         "title": "Self Care",
+        "image": selfCareIcon,
         "timeframes": {
-        "daily": {
+            "time": "Yesterday",
             "current": 0,
             "previous": 1
-        },
-        "weekly": {
+        }
+    }
+]
+export const WeeklyData = [
+    {
+        "id": "work",
+        "title": "Work",
+        "image": workIcon,
+        "timeframes": {
+            "time": "Last Week",
+            "current": 32,
+            "previous": 36
+        }
+    },
+    {
+        "id": "play",
+        "title": "Play",
+        "image": playIcon,
+        "timeframes": {
+            "time": "Last Week",
+            "current": 10,
+            "previous": 8
+        }
+    },
+    {
+        "id": "study",
+        "title": "Study",
+        "image": studyIcon,
+        "timeframes": {
+            "time": "Last Week",
+            "current": 4,
+            "previous": 7
+        }
+    },
+    {
+        "id": "exercise",
+        "title": "Exercise",
+        "image": exerciseIcon,
+        "timeframes": {
+            "time": "Last Week",
+            "current": 4,
+            "previous": 5
+        }
+    },
+    {
+        "id": "social",
+        "title": "Social",
+        "image": socialIcon,
+        "timeframes": {
+            "time": "Last Week",
+            "current": 5,
+            "previous": 10
+        }
+    },
+    {
+        "id": "selfCare",
+        "title": "Self Care",
+        "image": selfCareIcon,
+        "timeframes": {
+            "time": "Last Week",
             "current": 2,
             "previous": 2
-        },
-        "monthly": {
+        }
+    }
+]
+
+export const MonthlyData = [
+    {
+        "id": "work",
+        "title": "Work",
+        "image": workIcon,
+        "timeframes": {
+            "time": "Last Month",
+            "current": 103,
+            "previous": 128
+        }
+    },
+    {
+        "id": "play",
+        "title": "Play",
+        "image": playIcon,
+        "timeframes": {
+            "time": "Last Month",
+            "current": 23,
+            "previous": 29
+        }
+    },
+    {
+        "id": "study",
+        "title": "Study",
+        "image": studyIcon,
+        "timeframes": {
+            "time": "Last Month",
+            "current": 13,
+            "previous": 19
+        }
+    },
+    {
+        "id": "exercise",
+        "title": "Exercise",
+        "image": exerciseIcon,
+        "timeframes": {
+            "time": "Last Month",
+            "current": 11,
+            "previous": 18
+        }
+    },
+    {
+        "id": "social",
+        "title": "Social",
+        "image": socialIcon,
+        "timeframes": {
+            "time": "Last Month",
+            "current": 21,
+            "previous": 23
+        }
+    },
+    {
+        "id": "selfCare",
+        "title": "Self Care",
+        "image": selfCareIcon,
+        "timeframes": {
+            "time": "Last Month",
             "current": 7,
             "previous": 11
-        }
         }
     }
     ]

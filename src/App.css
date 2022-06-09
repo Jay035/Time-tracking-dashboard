@@ -34,29 +34,29 @@
 }
 
 /* ------------------------------------------------------------- */
-/* backgrounds for the time cards */
+/* backgrounds for the respective time cards */
 .bg#work{
-  background: var(--soft-orange);
+  background-color: var(--soft-orange);
 }
 
 .bg#play{
-  background: var(--Soft-blue);
+  background-color: var(--Soft-blue);
 }
 
 .bg#study{
-  background: var(--Light-red);
+  background-color: var(--Light-red);
 }
 
 .bg#exercise{
-  background: var(--Lime-green);
+  background-color: var(--Lime-green);
 }
 
 .bg#social{
-  background: var(--Violet);
+  background-color: var(--Violet);
 }
 
 .bg#selfCare{
-  background: var(--Soft-yellow);
+  background-color: var(--Soft-yellow);
 }
 
 *{
@@ -68,9 +68,17 @@
 body{
   background: var(--Very-dark-blue);
   color: var(--white);
-  font-size: 18px;
   font-family: 'Rubik', sans-serif;
   line-height: 1.5;
+}
+
+.App{
+  width: 90%;
+  /* max-width: 1400px; */
+  overflow: hidden;
+  /* max-width: 600px; */
+  margin-inline: auto;
+  margin-block: 3em;
 }
 
 img{
@@ -92,16 +100,6 @@ li:focus{
   color: var(--white);
 }
 
-.App{
-  width: 90%;
-  margin-inline: auto;
-  margin-block: 3em;
-}
-
-.name{
-  font-weight: lighter;
-}
-
 h1{
   font-weight: lighter;
   font-size: 2rem;
@@ -118,30 +116,38 @@ h1{
 }
 
 img.userImg{
-  width: 3em;
+  width: 4em;
   border: 3px solid var(--white);
   border-radius: 50%;
   margin-right: 1em;
+  float: left;
+}
+
+section:nth-child(1){
+  background: var(--Dark-blue);
+  border-radius: 15px;
 }
 
 .time--div{
   padding: 1.2rem 2rem;
-  background: var(--Dark-blue);
   border-radius: 0 0 15px 15px;
 }
 
-.tracker{
+.bg{
+  padding-top: 2.8em;
+  margin-block: 2em;
   border-radius: 15px;
-  background: var(--Dark-blue);
-  margin-bottom: 1.5em;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-y: -5%;
+  background-position-x: 400px;
 }
 
-.tabContent{
-  display: none;
-}
-
-.tabContent.active{
-  display: block;
+.card--img{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 0;
 }
 
 .card{
@@ -149,13 +155,84 @@ img.userImg{
   background: var(--Dark-blue);
   padding: 1rem ;
   border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.card:hover{
+  background-color: var(--Desaturated-blue);
 }
 
 .card--title{
   font-size: 18px;
+  font-weight: 550;
+}
+
+.time p{
+  color: var(--Pale-Blue);
 }
 
 img.ellipsis{
   width: 20px;
   height: 6px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .App{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 250px auto;
+    width: 100%;
+  }
+
+  .user--info{
+    flex-direction: column;
+    gap: 30px;
+    padding: 4rem 2rem;
+    text-align: left;
+    align-items: flex-start;
+    /* justify-content: baseline; */
+  }
+
+  .time--div{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 17em);
+  }
+
+  .bg{
+    margin: 0;
+  }
+
+  .card{
+    padding: 1.5rem;
+  }
+  
+  .time{
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time h1{
+    font-size: 2.5em;
+  }
+
+  .time p{
+    padding-bottom: 10px;
+  }
 }
