@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/assets/Screenshot.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -60,21 +60,53 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to manipulate functionalities with the use of "useState" and "useEffect"
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.proudOfThisCSS{
+  padding-top: 2.8em;
+  margin-block: 2em;
+  border-radius: 15px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-y: -5%;
+  background-position-x: 400px;
 }
 ```
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
+  const [data, setData] = useState([]),
+        [selected, setSelected] = useState("weekly"),
+        tabList = [
+          {
+            id: "daily",
+            time: "Daily"
+          },
+          {
+            id: "weekly",
+            time: "Weekly"
+          },
+          {
+            id: "monthly",
+            time: "Monthly"
+          }
+        ];
+        useEffect(() => {
+          switch(selected){
+            case "daily" :
+              setData(DailyData);
+              break;
+            case "weekly" :
+              setData(WeeklyData);
+              break;
+            case "monthly" :
+              setData(MonthlyData);
+              break;
+              default:
+                setData(WeeklyData)
+          }
+        }, [selected])
 }
 ```
 
