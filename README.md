@@ -22,7 +22,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### The challenge
 
-Users should be able to:
+Users are able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -31,14 +31,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./src/assets/Screenshot.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -60,7 +52,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I learned how to manipulate functionalities with the use of "useState" and "useEffect"
+I learned how to manipulate functionalities with the use of "useState" and "useEffect" much better
 
 
 ```css
@@ -109,10 +101,6 @@ const proudOfThisFunc = () => {
         }, [selected])
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
